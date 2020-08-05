@@ -194,7 +194,7 @@ struct DiabloNewsEntryView : View {
     }
 }
 
-@main
+
 struct DiabloNews: Widget {
     private let kind: String = "DiabloNews"
 

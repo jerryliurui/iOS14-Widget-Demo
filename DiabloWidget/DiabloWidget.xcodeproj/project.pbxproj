@@ -40,6 +40,7 @@
 		7089CDF324DA8B760092123E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5ABE24D7F4EF00F781DD /* DataModel.swift */; };
 		7089CDF424DA8B7A0092123E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AC124D7F52300F781DD /* NetworkResult.swift */; };
 		7089CDF524DA8B860092123E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB224D7BE9E00F781DD /* Article.swift */; };
+		7089CDF724DAB6830092123E /* UserProfileWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7089CDF624DAB6830092123E /* UserProfileWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		7089CDE624DA88260092123E /* DiabloIntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DiabloIntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7089CDE824DA88260092123E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		7089CDEA24DA88260092123E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7089CDF624DAB6830092123E /* UserProfileWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				707F5AA324D40B5400F781DD /* DiabloNews.swift */,
+				7089CDF624DAB6830092123E /* UserProfileWidget.swift */,
 				707F5AA524D40B5400F781DD /* DiabloNews.intentdefinition */,
 				707F5AA624D40B5500F781DD /* Assets.xcassets */,
 				707F5AA824D40B5500F781DD /* Info.plist */,
@@ -489,6 +492,7 @@
 				707F5ABA24D7F43400F781DD /* Helper.swift in Sources */,
 				707F5AB424D7BE9E00F781DD /* Article.swift in Sources */,
 				707F5AB724D7E66600F781DD /* ColorHelper.swift in Sources */,
+				7089CDF724DAB6830092123E /* UserProfileWidget.swift in Sources */,
 				707F5AC324D7F52300F781DD /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
