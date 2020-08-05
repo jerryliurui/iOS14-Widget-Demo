@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		707BD77F24D94DF200480D6D /* WidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707BD77E24D94DF200480D6D /* WidgetManager.swift */; };
+		707F5A6E24D40B2A00F781DD /* DiabloWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5A6D24D40B2A00F781DD /* DiabloWidgetApp.swift */; };
+		707F5A7024D40B2A00F781DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5A6F24D40B2A00F781DD /* ContentView.swift */; };
+		707F5A7224D40B2B00F781DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707F5A7124D40B2B00F781DD /* Assets.xcassets */; };
+		707F5A7524D40B2B00F781DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707F5A7424D40B2B00F781DD /* Preview Assets.xcassets */; };
+		707F5A8024D40B2B00F781DD /* DiabloWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5A7F24D40B2B00F781DD /* DiabloWidgetTests.swift */; };
+		707F5A8B24D40B2B00F781DD /* DiabloWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5A8A24D40B2B00F781DD /* DiabloWidgetUITests.swift */; };
+		707F5A9F24D40B5400F781DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F5A9E24D40B5400F781DD /* WidgetKit.framework */; };
+		707F5AA124D40B5400F781DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F5AA024D40B5400F781DD /* SwiftUI.framework */; };
+		707F5AA424D40B5400F781DD /* DiabloNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AA324D40B5400F781DD /* DiabloNews.swift */; };
+		707F5AA724D40B5500F781DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707F5AA624D40B5500F781DD /* Assets.xcassets */; };
+		707F5AA924D40B5500F781DD /* DiabloNews.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AA524D40B5400F781DD /* DiabloNews.intentdefinition */; };
+		707F5AAA24D40B5500F781DD /* DiabloNews.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AA524D40B5400F781DD /* DiabloNews.intentdefinition */; };
+		707F5AAD24D40B5500F781DD /* DiabloNewsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 707F5A9C24D40B5400F781DD /* DiabloNewsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		707F5AB324D7BE9E00F781DD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB224D7BE9E00F781DD /* Article.swift */; };
+		707F5AB424D7BE9E00F781DD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB224D7BE9E00F781DD /* Article.swift */; };
+		707F5AB624D7E66600F781DD /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB524D7E66600F781DD /* ColorHelper.swift */; };
+		707F5AB724D7E66600F781DD /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB524D7E66600F781DD /* ColorHelper.swift */; };
+		707F5AB924D7F43400F781DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB824D7F43400F781DD /* Helper.swift */; };
+		707F5ABA24D7F43400F781DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB824D7F43400F781DD /* Helper.swift */; };
+		707F5ABC24D7F48900F781DD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5ABB24D7F48900F781DD /* DataManager.swift */; };
+		707F5ABD24D7F48900F781DD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5ABB24D7F48900F781DD /* DataManager.swift */; };
+		707F5ABF24D7F4EF00F781DD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5ABE24D7F4EF00F781DD /* DataModel.swift */; };
+		707F5AC024D7F4EF00F781DD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5ABE24D7F4EF00F781DD /* DataModel.swift */; };
+		707F5AC224D7F52300F781DD /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AC124D7F52300F781DD /* NetworkResult.swift */; };
+		707F5AC324D7F52300F781DD /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AC124D7F52300F781DD /* NetworkResult.swift */; };
+		7089CDE924DA88260092123E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7089CDE824DA88260092123E /* IntentHandler.swift */; };
+		7089CDED24DA88260092123E /* DiabloIntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7089CDE624DA88260092123E /* DiabloIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7089CDF124DA88F00092123E /* DiabloNews.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AA524D40B5400F781DD /* DiabloNews.intentdefinition */; };
+		7089CDF224DA8AFA0092123E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5ABB24D7F48900F781DD /* DataManager.swift */; };
+		7089CDF324DA8B760092123E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5ABE24D7F4EF00F781DD /* DataModel.swift */; };
+		7089CDF424DA8B7A0092123E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AC124D7F52300F781DD /* NetworkResult.swift */; };
+		7089CDF524DA8B860092123E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F5AB224D7BE9E00F781DD /* Article.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		707F5A7C24D40B2B00F781DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 707F5A6224D40B2A00F781DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 707F5A6924D40B2A00F781DD;
+			remoteInfo = DiabloWidget;
+		};
+		707F5A8724D40B2B00F781DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 707F5A6224D40B2A00F781DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 707F5A6924D40B2A00F781DD;
+			remoteInfo = DiabloWidget;
+		};
+		707F5AAB24D40B5500F781DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 707F5A6224D40B2A00F781DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 707F5A9B24D40B5400F781DD;
+			remoteInfo = DiabloNewsExtension;
+		};
+		7089CDEB24DA88260092123E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 707F5A6224D40B2A00F781DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7089CDE524DA88260092123E;
+			remoteInfo = DiabloIntentHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		707F5AB124D40B5500F781DD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7089CDED24DA88260092123E /* DiabloIntentHandler.appex in Embed App Extensions */,
+				707F5AAD24D40B5500F781DD /* DiabloNewsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		707BD77E24D94DF200480D6D /* WidgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetManager.swift; sourceTree = "<group>"; };
+		707F5A6A24D40B2A00F781DD /* DiabloWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabloWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		707F5A6D24D40B2A00F781DD /* DiabloWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabloWidgetApp.swift; sourceTree = "<group>"; };
+		707F5A6F24D40B2A00F781DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		707F5A7124D40B2B00F781DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		707F5A7424D40B2B00F781DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		707F5A7624D40B2B00F781DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707F5A7B24D40B2B00F781DD /* DiabloWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiabloWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		707F5A7F24D40B2B00F781DD /* DiabloWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabloWidgetTests.swift; sourceTree = "<group>"; };
+		707F5A8124D40B2B00F781DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707F5A8624D40B2B00F781DD /* DiabloWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiabloWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		707F5A8A24D40B2B00F781DD /* DiabloWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabloWidgetUITests.swift; sourceTree = "<group>"; };
+		707F5A8C24D40B2B00F781DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707F5A9C24D40B5400F781DD /* DiabloNewsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DiabloNewsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		707F5A9E24D40B5400F781DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		707F5AA024D40B5400F781DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		707F5AA324D40B5400F781DD /* DiabloNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabloNews.swift; sourceTree = "<group>"; };
+		707F5AA524D40B5400F781DD /* DiabloNews.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DiabloNews.intentdefinition; sourceTree = "<group>"; };
+		707F5AA624D40B5500F781DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		707F5AA824D40B5500F781DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707F5AB224D7BE9E00F781DD /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		707F5AB524D7E66600F781DD /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		707F5AB824D7F43400F781DD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		707F5ABB24D7F48900F781DD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		707F5ABE24D7F4EF00F781DD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		707F5AC124D7F52300F781DD /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		7089CDE624DA88260092123E /* DiabloIntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DiabloIntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7089CDE824DA88260092123E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		7089CDEA24DA88260092123E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		707F5A6724D40B2A00F781DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A7824D40B2B00F781DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A8324D40B2B00F781DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A9924D40B5400F781DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F5AA124D40B5400F781DD /* SwiftUI.framework in Frameworks */,
+				707F5A9F24D40B5400F781DD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7089CDE324DA88260092123E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		707F5A6124D40B2A00F781DD = {
+			isa = PBXGroup;
+			children = (
+				707F5A6C24D40B2A00F781DD /* DiabloWidget */,
+				707F5A7E24D40B2B00F781DD /* DiabloWidgetTests */,
+				707F5A8924D40B2B00F781DD /* DiabloWidgetUITests */,
+				707F5AA224D40B5400F781DD /* DiabloNews */,
+				7089CDE724DA88260092123E /* DiabloIntentHandler */,
+				707F5A9D24D40B5400F781DD /* Frameworks */,
+				707F5A6B24D40B2A00F781DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		707F5A6B24D40B2A00F781DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				707F5A6A24D40B2A00F781DD /* DiabloWidget.app */,
+				707F5A7B24D40B2B00F781DD /* DiabloWidgetTests.xctest */,
+				707F5A8624D40B2B00F781DD /* DiabloWidgetUITests.xctest */,
+				707F5A9C24D40B5400F781DD /* DiabloNewsExtension.appex */,
+				7089CDE624DA88260092123E /* DiabloIntentHandler.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		707F5A6C24D40B2A00F781DD /* DiabloWidget */ = {
+			isa = PBXGroup;
+			children = (
+				707F5A6D24D40B2A00F781DD /* DiabloWidgetApp.swift */,
+				707F5A6F24D40B2A00F781DD /* ContentView.swift */,
+				707F5A7124D40B2B00F781DD /* Assets.xcassets */,
+				707F5A7624D40B2B00F781DD /* Info.plist */,
+				707F5A7324D40B2B00F781DD /* Preview Content */,
+				707BD77E24D94DF200480D6D /* WidgetManager.swift */,
+			);
+			path = DiabloWidget;
+			sourceTree = "<group>";
+		};
+		707F5A7324D40B2B00F781DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				707F5A7424D40B2B00F781DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		707F5A7E24D40B2B00F781DD /* DiabloWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				707F5A7F24D40B2B00F781DD /* DiabloWidgetTests.swift */,
+				707F5A8124D40B2B00F781DD /* Info.plist */,
+			);
+			path = DiabloWidgetTests;
+			sourceTree = "<group>";
+		};
+		707F5A8924D40B2B00F781DD /* DiabloWidgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				707F5A8A24D40B2B00F781DD /* DiabloWidgetUITests.swift */,
+				707F5A8C24D40B2B00F781DD /* Info.plist */,
+			);
+			path = DiabloWidgetUITests;
+			sourceTree = "<group>";
+		};
+		707F5A9D24D40B5400F781DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				707F5A9E24D40B5400F781DD /* WidgetKit.framework */,
+				707F5AA024D40B5400F781DD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		707F5AA224D40B5400F781DD /* DiabloNews */ = {
+			isa = PBXGroup;
+			children = (
+				707F5AA324D40B5400F781DD /* DiabloNews.swift */,
+				707F5AA524D40B5400F781DD /* DiabloNews.intentdefinition */,
+				707F5AA624D40B5500F781DD /* Assets.xcassets */,
+				707F5AA824D40B5500F781DD /* Info.plist */,
+				707F5AB224D7BE9E00F781DD /* Article.swift */,
+				707F5AB524D7E66600F781DD /* ColorHelper.swift */,
+				707F5AB824D7F43400F781DD /* Helper.swift */,
+				707F5ABB24D7F48900F781DD /* DataManager.swift */,
+				707F5ABE24D7F4EF00F781DD /* DataModel.swift */,
+				707F5AC124D7F52300F781DD /* NetworkResult.swift */,
+			);
+			path = DiabloNews;
+			sourceTree = "<group>";
+		};
+		7089CDE724DA88260092123E /* DiabloIntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				7089CDE824DA88260092123E /* IntentHandler.swift */,
+				7089CDEA24DA88260092123E /* Info.plist */,
+			);
+			path = DiabloIntentHandler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		707F5A6924D40B2A00F781DD /* DiabloWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 707F5A8F24D40B2B00F781DD /* Build configuration list for PBXNativeTarget "DiabloWidget" */;
+			buildPhases = (
+				707F5A6624D40B2A00F781DD /* Sources */,
+				707F5A6724D40B2A00F781DD /* Frameworks */,
+				707F5A6824D40B2A00F781DD /* Resources */,
+				707F5AB124D40B5500F781DD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				707F5AAC24D40B5500F781DD /* PBXTargetDependency */,
+				7089CDEC24DA88260092123E /* PBXTargetDependency */,
+			);
+			name = DiabloWidget;
+			productName = DiabloWidget;
+			productReference = 707F5A6A24D40B2A00F781DD /* DiabloWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		707F5A7A24D40B2B00F781DD /* DiabloWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 707F5A9224D40B2B00F781DD /* Build configuration list for PBXNativeTarget "DiabloWidgetTests" */;
+			buildPhases = (
+				707F5A7724D40B2B00F781DD /* Sources */,
+				707F5A7824D40B2B00F781DD /* Frameworks */,
+				707F5A7924D40B2B00F781DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				707F5A7D24D40B2B00F781DD /* PBXTargetDependency */,
+			);
+			name = DiabloWidgetTests;
+			productName = DiabloWidgetTests;
+			productReference = 707F5A7B24D40B2B00F781DD /* DiabloWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		707F5A8524D40B2B00F781DD /* DiabloWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 707F5A9524D40B2B00F781DD /* Build configuration list for PBXNativeTarget "DiabloWidgetUITests" */;
+			buildPhases = (
+				707F5A8224D40B2B00F781DD /* Sources */,
+				707F5A8324D40B2B00F781DD /* Frameworks */,
+				707F5A8424D40B2B00F781DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				707F5A8824D40B2B00F781DD /* PBXTargetDependency */,
+			);
+			name = DiabloWidgetUITests;
+			productName = DiabloWidgetUITests;
+			productReference = 707F5A8624D40B2B00F781DD /* DiabloWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		707F5A9B24D40B5400F781DD /* DiabloNewsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 707F5AAE24D40B5500F781DD /* Build configuration list for PBXNativeTarget "DiabloNewsExtension" */;
+			buildPhases = (
+				707F5A9824D40B5400F781DD /* Sources */,
+				707F5A9924D40B5400F781DD /* Frameworks */,
+				707F5A9A24D40B5400F781DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiabloNewsExtension;
+			productName = DiabloNewsExtension;
+			productReference = 707F5A9C24D40B5400F781DD /* DiabloNewsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7089CDE524DA88260092123E /* DiabloIntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7089CDEE24DA88260092123E /* Build configuration list for PBXNativeTarget "DiabloIntentHandler" */;
+			buildPhases = (
+				7089CDE224DA88260092123E /* Sources */,
+				7089CDE324DA88260092123E /* Frameworks */,
+				7089CDE424DA88260092123E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiabloIntentHandler;
+			productName = DiabloIntentHandler;
+			productReference = 7089CDE624DA88260092123E /* DiabloIntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		707F5A6224D40B2A00F781DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					707F5A6924D40B2A00F781DD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					707F5A7A24D40B2B00F781DD = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 707F5A6924D40B2A00F781DD;
+					};
+					707F5A8524D40B2B00F781DD = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 707F5A6924D40B2A00F781DD;
+					};
+					707F5A9B24D40B5400F781DD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					7089CDE524DA88260092123E = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 707F5A6524D40B2A00F781DD /* Build configuration list for PBXProject "DiabloWidget" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 707F5A6124D40B2A00F781DD;
+			productRefGroup = 707F5A6B24D40B2A00F781DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				707F5A6924D40B2A00F781DD /* DiabloWidget */,
+				707F5A7A24D40B2B00F781DD /* DiabloWidgetTests */,
+				707F5A8524D40B2B00F781DD /* DiabloWidgetUITests */,
+				707F5A9B24D40B5400F781DD /* DiabloNewsExtension */,
+				7089CDE524DA88260092123E /* DiabloIntentHandler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		707F5A6824D40B2A00F781DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F5A7524D40B2B00F781DD /* Preview Assets.xcassets in Resources */,
+				707F5A7224D40B2B00F781DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A7924D40B2B00F781DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A8424D40B2B00F781DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A9A24D40B5400F781DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F5AA724D40B5500F781DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7089CDE424DA88260092123E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		707F5A6624D40B2A00F781DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F5AB324D7BE9E00F781DD /* Article.swift in Sources */,
+				707BD77F24D94DF200480D6D /* WidgetManager.swift in Sources */,
+				707F5AB624D7E66600F781DD /* ColorHelper.swift in Sources */,
+				707F5A7024D40B2A00F781DD /* ContentView.swift in Sources */,
+				707F5AC224D7F52300F781DD /* NetworkResult.swift in Sources */,
+				707F5ABC24D7F48900F781DD /* DataManager.swift in Sources */,
+				707F5A6E24D40B2A00F781DD /* DiabloWidgetApp.swift in Sources */,
+				707F5ABF24D7F4EF00F781DD /* DataModel.swift in Sources */,
+				707F5AAA24D40B5500F781DD /* DiabloNews.intentdefinition in Sources */,
+				707F5AB924D7F43400F781DD /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A7724D40B2B00F781DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F5A8024D40B2B00F781DD /* DiabloWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A8224D40B2B00F781DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F5A8B24D40B2B00F781DD /* DiabloWidgetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707F5A9824D40B5400F781DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F5AC024D7F4EF00F781DD /* DataModel.swift in Sources */,
+				707F5AA924D40B5500F781DD /* DiabloNews.intentdefinition in Sources */,
+				707F5ABD24D7F48900F781DD /* DataManager.swift in Sources */,
+				707F5AA424D40B5400F781DD /* DiabloNews.swift in Sources */,
+				707F5ABA24D7F43400F781DD /* Helper.swift in Sources */,
+				707F5AB424D7BE9E00F781DD /* Article.swift in Sources */,
+				707F5AB724D7E66600F781DD /* ColorHelper.swift in Sources */,
+				707F5AC324D7F52300F781DD /* NetworkResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7089CDE224DA88260092123E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7089CDF124DA88F00092123E /* DiabloNews.intentdefinition in Sources */,
+				7089CDF424DA8B7A0092123E /* NetworkResult.swift in Sources */,
+				7089CDF524DA8B860092123E /* Article.swift in Sources */,
+				7089CDF324DA8B760092123E /* DataModel.swift in Sources */,
+				7089CDF224DA8AFA0092123E /* DataManager.swift in Sources */,
+				7089CDE924DA88260092123E /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		707F5A7D24D40B2B00F781DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 707F5A6924D40B2A00F781DD /* DiabloWidget */;
+			targetProxy = 707F5A7C24D40B2B00F781DD /* PBXContainerItemProxy */;
+		};
+		707F5A8824D40B2B00F781DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 707F5A6924D40B2A00F781DD /* DiabloWidget */;
+			targetProxy = 707F5A8724D40B2B00F781DD /* PBXContainerItemProxy */;
+		};
+		707F5AAC24D40B5500F781DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 707F5A9B24D40B5400F781DD /* DiabloNewsExtension */;
+			targetProxy = 707F5AAB24D40B5500F781DD /* PBXContainerItemProxy */;
+		};
+		7089CDEC24DA88260092123E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7089CDE524DA88260092123E /* DiabloIntentHandler */;
+			targetProxy = 7089CDEB24DA88260092123E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		707F5A8D24D40B2B00F781DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		707F5A8E24D40B2B00F781DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		707F5A9024D40B2B00F781DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DiabloWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DiabloWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		707F5A9124D40B2B00F781DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DiabloWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DiabloWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		707F5A9324D40B2B00F781DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloWidgetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiabloWidget.app/DiabloWidget";
+			};
+			name = Debug;
+		};
+		707F5A9424D40B2B00F781DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloWidgetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiabloWidget.app/DiabloWidget";
+			};
+			name = Release;
+		};
+		707F5A9624D40B2B00F781DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloWidgetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiabloWidget;
+			};
+			name = Debug;
+		};
+		707F5A9724D40B2B00F781DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloWidgetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiabloWidget;
+			};
+			name = Release;
+		};
+		707F5AAF24D40B5500F781DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = nbred;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = nbyellow;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidget.DiabloNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		707F5AB024D40B5500F781DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = nbred;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = nbyellow;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidget.DiabloNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7089CDEF24DA88260092123E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloIntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidget.DiabloIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7089CDF024DA88260092123E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				INFOPLIST_FILE = DiabloIntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.DiabloWidget.DiabloIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		707F5A6524D40B2A00F781DD /* Build configuration list for PBXProject "DiabloWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707F5A8D24D40B2B00F781DD /* Debug */,
+				707F5A8E24D40B2B00F781DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		707F5A8F24D40B2B00F781DD /* Build configuration list for PBXNativeTarget "DiabloWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707F5A9024D40B2B00F781DD /* Debug */,
+				707F5A9124D40B2B00F781DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		707F5A9224D40B2B00F781DD /* Build configuration list for PBXNativeTarget "DiabloWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707F5A9324D40B2B00F781DD /* Debug */,
+				707F5A9424D40B2B00F781DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		707F5A9524D40B2B00F781DD /* Build configuration list for PBXNativeTarget "DiabloWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707F5A9624D40B2B00F781DD /* Debug */,
+				707F5A9724D40B2B00F781DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		707F5AAE24D40B5500F781DD /* Build configuration list for PBXNativeTarget "DiabloNewsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707F5AAF24D40B5500F781DD /* Debug */,
+				707F5AB024D40B5500F781DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7089CDEE24DA88260092123E /* Build configuration list for PBXNativeTarget "DiabloIntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7089CDEF24DA88260092123E /* Debug */,
+				7089CDF024DA88260092123E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 707F5A6224D40B2A00F781DD /* Project object */;
+}
