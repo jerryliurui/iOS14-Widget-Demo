@@ -132,9 +132,9 @@ extension Article {
     static let demoData2 = Article (
         docId: "demoData2",
         title: "2.6.9暗影三刀国家队杀王攻略-虎牙小柒",
-        comment: 2510,
+        comment: 0,
         imageUrl: "",
-        tagList: articleTag(text: "复仇者营地", type: "Red-FBG"),
+        tagList: articleTag(text: "", type: "Red-FBG"),
         imageData: UIImage(named: "5")?.pngData()
     )
     

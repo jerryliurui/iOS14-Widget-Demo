@@ -14,12 +14,11 @@ struct Provider: IntentTimelineProvider {
 
     typealias Intent = DiabloHeroIntent
     
-//    func placeholder(with: Self.Context) -> Self.Entry {
-//        print("placeholder(with: Context) -> FeedModelEntry")
-//        return SimpleEntry(date: Date(), configuration: DiabloHeroIntent(), size: with.displaySize, smallArticle: Article.placeHolderData,columnUrlString: "", mediumLogo: nil, mediumNightLogo: nil, mediumArticles: [Article.placeHolderData,Article.placeHolderData], largeCoverAritle: Article.placeHolderData, largeArticles: [Article.placeHolderData,Article.placeHolderData], relevance: TimelineEntryRelevance(score: 0.0))
-//    }
+    func placeholder(in context: Context) -> SimpleEntry {
+        return SimpleEntry(date: Date(), configuration: DiabloHeroIntent(), size: context.displaySize, smallArticle: Article.placeHolderData,columnUrlString: "", mediumLogo: nil, mediumNightLogo: nil, mediumArticles: [Article.placeHolderData,Article.placeHolderData], largeCoverAritle: Article.placeHolderData, largeArticles: [Article.placeHolderData,Article.placeHolderData], relevance: TimelineEntryRelevance(score: 0.0))
+    }
     
-    public func snapshot(for configuration: DiabloHeroIntent, with context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func getSnapshot(for configuration: DiabloHeroIntent, in context: Context, completion: @escaping (SimpleEntry) -> Void) {
         let currentDate = Date()
         configuration.YourHero?.identifier
         let fetchArticleNums = fetchArticleCount(currentFamily: context.family)
@@ -76,8 +75,8 @@ struct Provider: IntentTimelineProvider {
             completion(snapShotEntry)
         }
     }
-
-    public func timeline(for configuration: DiabloHeroIntent, with context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    
+    func getTimeline(for configuration: DiabloHeroIntent, in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> Void) {
         var entries: [SimpleEntry] = []
         
         let currentDate = Date()

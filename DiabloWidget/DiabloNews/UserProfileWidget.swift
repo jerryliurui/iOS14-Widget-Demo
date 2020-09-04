@@ -9,14 +9,18 @@ import SwiftUI
 import WidgetKit
 
 struct UserProfileProvider: TimelineProvider {
+    func placeholder(in context: Context) -> UserEntry {
+        return UserEntry(date: Date())
+    }
+    
     public typealias Entry = UserEntry
     
-    public func snapshot(with context: Context, completion: @escaping (UserEntry) -> ()) {
+    func getSnapshot(in context: Context, completion: @escaping (UserEntry) -> Void) {
         let entry = UserEntry(date: Date())
         completion(entry)
     }
     
-    public func timeline(with context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<UserEntry>) -> Void) {
         var entries: [UserEntry] = []
         
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
